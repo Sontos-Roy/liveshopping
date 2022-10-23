@@ -15,14 +15,39 @@
     .carousel-main .slide .slide-img{
       height: 380px;
     }
-    .tab-container .owl-carousel-section{
+    .carousel-main .slide .slide-img-1 img, .carousel-main .slide .slide-img-2 div img{
+      width: 280px;
+    }
+    
+    .tab-container .product-items{
       height: 390px;
     }
-    .tab-container .owl-carousel-section .carousel-items{
+    .tab-container .product-items .product{
       height: 390px;
     }
-    .tab-container .owl-carousel-section .carousel-items .product{
+    .options-pannel2, .options-pannel{
+      opacity: 1;
+      right: 20px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .product:hover .options-pannel2{
+      animation: none;
+    }
+    .global-carousel-owl-col{
+      min-height: 470px;
+    }
+    .tab-container  .product-items{
       height: 390px;
+    }
+    .tab-container .product-items .product, .deal-day-row .product{
+      height: 390px;
+    }
+    .shop-filter-sidebar{
+      display: none;
+    }
+    .product-details-p{
+      display: none;
     }
   }
   
@@ -43,14 +68,21 @@
     .carousel-main .slide .slide-img{
       height: 400px;
     }
-    .tab-container .owl-carousel-section{
+    .carousel-main .slide .slide-img-1 img{
+      width: 300px;
+    }
+    
+    .tab-container  .product-items{
       height: 390px;
     }
-    .tab-container .owl-carousel-section .carousel-items{
+    .tab-container .product-items .product, .deal-day-row .product{
       height: 390px;
     }
-    .tab-container .owl-carousel-section .carousel-items .product{
-      height: 390px;
+    .shop-filter-sidebar{
+      display: none;
+    }
+    .product-details-p{
+      display: none;
     }
   }
   
@@ -71,15 +103,19 @@
     .carousel-main .slide .slide-img{
       height: 420px;
     }
-    .tab-container .owl-carousel-section{
+    
+    .tab-container .product-items{
       height: 390px;
     }
-    .tab-container .owl-carousel-section .carousel-items{
+    .tab-container .product-items .product{
       height: 390px;
     }
-    .tab-container .owl-carousel-section .carousel-items .product{
-      height: 390px;
+    .shop-filter-sidebar{
+      display: none;
     }
+    .product-details-p{
+      display: none;
+    } 
   }
   
   /* Large devices (desktops, 992px and up)*/

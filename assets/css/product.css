@@ -1,0 +1,11 @@
+
+.product-indicators .image2 img{
+    width: 100%;
+}
+.product-indicators.carousel-indicators{
+    position: relative !important;
+}
+.product-indicators.carousel-indicators [data-bs-target]{
+    height: 200px !important;
+    width: 200px;
+}
