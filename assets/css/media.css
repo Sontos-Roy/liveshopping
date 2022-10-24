@@ -124,6 +124,9 @@
     .carousel-main .slide .slide-img{
       height: 461px;
     }
+    .signup-form{
+      border-right: 1px solid rgba(128, 128, 128, 0.493);
+    }
   }
   
   /* Extra Large devices (desktops, 992px and up)*/
@@ -132,6 +135,9 @@
     .global-cat-sec .global-cat-row .global-single-col .global-single-item{
       width: 250px;
       overflow: hidden;
+    }
+    .signup-form{
+      border-right: 1px solid rgba(128, 128, 128, 0.493);
     }
   }
   
@@ -145,5 +151,8 @@
     .accordion{
       width: 200px;
       text-align: center;
+    }
+    .signup-form{
+      border-right: 1px solid rgba(128, 128, 128, 0.493);
     }
   }

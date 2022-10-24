@@ -118,6 +118,19 @@ $(document).ready(function () {
 
     qty.val(dec);
   });
+
+  $("#form-target-l").click(function(){
+    $("#login-form").fadeIn(0);
+    $("#signup-form").fadeOut(0);
+    $("#form-target-l").fadeOut(0);
+    $("#form-target-s").fadeIn(100);
+  });
+  $("#form-target-s").click(function(){
+    $("#signup-form").fadeIn(0);
+    $("#login-form").fadeOut(0);
+    $("#form-target-s").fadeOut(0);
+    $("#form-target-l").fadeIn(100);
+  });
 });
 $(document).ready(function () {
   $(".cat-carousel").owlCarousel({
