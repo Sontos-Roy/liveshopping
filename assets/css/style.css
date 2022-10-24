@@ -791,8 +791,22 @@ width: 100%;
 .product-items div > .images .main-image, .deal-day-row .product .images .main-image{
   transition: 0.5s ease-in-out;
 }
-
 .product-items div:hover > .images .main-image , .deal-day-row .product:hover > .images .main-image{
+  transition: 2s ease-in-out;
+  transform: scale(1.5);
+}
+.product{
+  overflow: hidden;
+}
+.product .images{
+  max-height: 300px;
+  overflow: hidden;
+}
+.product .images .main-image{
+  transition: 0.5s ease-in-out;
+}
+
+.product:hover > .images .main-image{
   transition: 2s ease-in-out;
   transform: scale(1.5);
 }
@@ -1133,7 +1147,7 @@ footer .row div form button{
 }
 .quantity-buy button{
   background-color: var(--main-color);
-  padding: 4px 10px;
+  padding: 4px 20px;
   border-radius: 0;
   text-transform: uppercase;
   color: white;
