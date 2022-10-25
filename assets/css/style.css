@@ -4,7 +4,9 @@
   padding: 0;
   font-family: hind-reg, Arial, Helvetica, sans-serif;
 }
-
+html, body{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -707,6 +709,7 @@ body {
 }
 .global-cat-sec .global-cat-row .global-single-col .global-single-item .global-single-sec-text{
   position: absolute;
+  bottom: 1rem;
   z-index: 9999;
 }
 .global-cat-sec .global-cat-row .global-single-col .global-single-item .global-single-sec-text h2{
@@ -1173,4 +1176,113 @@ footer .row div form button{
   background: transparent;
   width: 1px;
 }
+
+.cart-form div input{
+  box-shadow: none;
+  outline: none;
+  border-radius: 0;
+}
+.cart-form div input:focus{
+  box-shadow: none;
+  outline: none;
+}
+.cart-form button{
+  width: 100%;
+  border: 0;
+  background: #FF6A00;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.cart-form button span{
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.cart-form button:hover span{
+  visibility: visible;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  padding-left: 10px;
+}
 /* modal  */
+
+.fixed-cart-bottom{
+  position: fixed; 
+  bottom: 5rem; 
+  right: 20px; 
+  background: white; 
+  border-radius: 50px; 
+  height: 50px; 
+  width: 50px; 
+  cursor: pointer; 
+  box-shadow: 2px 2px 8px gray; 
+  text-align: center; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 9999;
+}
+.fixed-cart-bottom:hover{
+  background: rgb(196, 196, 196);
+}
+.fixed-cart-bottom .badge{
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FF6A00 !important;
+}
+.fixed-scroll-bottom{
+  border: none;
+  position: fixed; 
+  bottom: 1rem; 
+  right: 20px; 
+  background: white; 
+  border-radius: 50px; 
+  height: 50px; 
+  width: 50px; 
+  cursor: pointer; 
+  box-shadow: 2px 2px 8px gray; 
+  text-align: center; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 9999;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.fixed-scroll-bottom:hover{
+  background: rgb(196, 196, 196);
+  
+}
+.fixed-scroll-bottom span{
+  padding-bottom: 0;
+  transition: 0.5s;
+}
+.fixed-scroll-bottom:hover span{
+  padding-bottom: 10px;
+  animation: scroll-top 1s infinite;
+}
+@keyframes scroll-top {
+  0%{
+    padding-bottom: 0;
+    opacity: 1;
+  }25%{
+    padding-bottom: 20px;
+    opacity: 1;
+  }50%{
+    padding-bottom: 0;
+    padding-top: 10px;
+    opacity: 1;
+  }75%{
+    padding-top: 0;
+    padding-bottom: 10;
+    opacity: 1;
+  }100%{
+    padding-bottom: 0;
+    opacity: 1;
+  }
+}

@@ -49,6 +49,15 @@
     .product-details-p{
       display: none;
     }
+    .account-menu{
+      width: 300px;
+      position: fixed;
+      left: -300px;
+      display: block;
+      background-color: white;
+      z-index: 1090;
+      top: 0;
+    }
   }
   
   /* Small devices (landscape phones, 576px and up)*/
@@ -83,6 +92,13 @@
     }
     .product-details-p{
       display: none;
+    }
+    .account-menu{
+      width: 300px;
+      position: fixed;
+      left: -300px;
+      background-color: white;
+      top: 0;
     }
   }
   
@@ -139,6 +155,9 @@
     .signup-form{
       border-right: 1px solid rgba(128, 128, 128, 0.493);
     }
+    .faq{
+      border-right: 1px solid rgba(128, 128, 128, 0.322);
+    }
   }
   
   /* Extra Extra large devices (large desktops, 1200px and up)*/
@@ -154,5 +173,8 @@
     }
     .signup-form{
       border-right: 1px solid rgba(128, 128, 128, 0.493);
+    }
+    .faq{
+      border-right: 1px solid gray;
     }
   }
