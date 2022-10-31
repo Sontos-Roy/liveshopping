@@ -22,6 +22,9 @@ body {
 .breadcrumb-item.active{
   color: gray !important;
 }
+.align-item-center{
+  align-items: center !important;
+}
 /* header start  */
 
     /* topbar start  */
@@ -213,7 +216,7 @@ body {
                 height: 100vh;
                 max-height: 100vh;
                 overflow-y: auto;
-                z-index: 1070;
+                z-index: 1090;
                 transition: 0.3s linear all;
               }
               
@@ -371,7 +374,6 @@ body {
                 /* transition: 0.5s linear all; */
                 animation: hide-dp 0.5s linear;
                 box-shadow: 0px 2px 10px 0px #80808096;
-                z-index: 1090;
               }
               
               .search-cat-dp ul::-webkit-scrollbar {
@@ -409,7 +411,7 @@ body {
                 padding-top: 22px;
                 display: none;
                 transition: display 0.3s ease;
-                z-index: 1090;
+                z-index: 9999;
                
               }
               .search-cat-dp-hover ul{

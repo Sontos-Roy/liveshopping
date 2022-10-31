@@ -43,6 +43,9 @@
     .tab-container .product-items .product, .deal-day-row .product{
       height: 390px;
     }
+    .deal-day-row .product.wishlist-product{
+      height: auto;
+    }
     .shop-filter-sidebar{
       display: none;
     }
@@ -86,6 +89,9 @@
     }
     .tab-container .product-items .product, .deal-day-row .product{
       height: 390px;
+    }
+    .deal-day-row .product.wishlist-product{
+      height: auto;
     }
     .shop-filter-sidebar{
       display: none;
@@ -158,6 +164,9 @@
     .faq{
       border-right: 1px solid rgba(128, 128, 128, 0.322);
     }
+    .border-lg-start{
+      border-left: 1px solid rgba(128, 128, 128, 0.171);
+    }
   }
   
   /* Extra Extra large devices (large desktops, 1200px and up)*/
@@ -176,5 +185,8 @@
     }
     .faq{
       border-right: 1px solid gray;
+    }
+    .border-lg-start{
+      border-left: 1px solid rgba(128, 128, 128, 0.171);
     }
   }
