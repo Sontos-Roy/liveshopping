@@ -217,42 +217,50 @@
         <link rel="stylesheet" href="assets/lightbox/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/product.css">
         <script src="assets/lightbox/jquery.magnific-popup.min.js"></script>
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
         <section>
-            <div class="container mt-4">
+            <div class="container product-details-row mt-4">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 product-image-col row pt-3">
-                        <div class="image single-product-images">
+                    <div class="col-lg-3 col-md-6 col-12 pe-0 product-image-col pt-2">
+                        <div class="image single-product-images mb-3">
                             <div class="discount-tag">
                                 -48%
                             </div>
-                            <div id="product-single" class="carousel slide" data-bs-ride="carousel">
-                            
-                                <div class="carousel-inner" role="listbox">
-                                    <a href="assets/images/gift-card/1000tk.jpg" class="carousel-item active">
-                                        <img src="assets/images/products/1.jpg" class="w-100 d-block" alt="Third slide">
-                                    </a>
-                                    <a href="assets/images/gift-card/2000tk.jpg" class="carousel-item">
-                                        <img src="assets/images/products/1.jpg" class="w-100 d-block" alt="Third slide">
-                                    </a>
-                                    <a href="assets/images/gift-card/200tk.jpg" class="carousel-item">
+                            <div class="owl-carousel slider-for-product">
+                                <div data-hash="slide1">
+                                    <a data-fancybox="gallery" data-src="assets/images/products/1.jpg">
                                         <img src="assets/images/products/1.jpg" class="w-100 d-block" alt="Third slide">
                                     </a>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#product-single" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#product-single" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div data-hash="slide2">
+                                    <a data-fancybox="gallery" data-src="assets/images/products/2.jpg">
+                                        <img src="assets/images/products/2.jpg" class="w-100 d-block" alt="Third slide">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="#slide1">
+                                    <img src="assets/images/products/1.jpg" alt="" class="col-12">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#slide2">
+                                    <img src="assets/images/products/1.jpg" alt="" class="col-12">
+                                </a>
                             </div>
                         </div>
                         
 
                         
                     </div>
-                    <div class="modal-product-details col-lg-7 col-md-6 col-12 pt-3">
+                    <div class="modal-product-details col-lg-6 col-md-6 col-12 pt-2">
                         <nav aria-label="breadcrumb" class="pt-0">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -284,15 +292,15 @@
                             </div>
                             <button class="btn">Buy</button>
                         </div>
-                        <div class="products-options mt-4 d-lg-flex">
+                        <div class="products-options mt-4 d-flex">
                             <a href="#" class="text-decoration-none text-dark me-3">
-                                <b><i class="fas fa-random"></i> Compare</b>
+                                <b><i class="fas fa-random"></i> <span class="sm-none">Compare</span></b>
                             </a>
                             <a href="#" class="text-decoration-none text-dark me-3">
-                                <b><i class="far fa-heart"></i> Add to Wishlist</b>
+                                <b><i class="far fa-heart"></i> <span class="sm-none">Add to Wishlist</span></b>
                             </a>
                             <a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#size-guide">
-                                <b><i class="fas fa-ruler"></i> Size Guide</b>
+                                <b><i class="fas fa-ruler"></i> <span class="sm-none">Size Guide</span></b>
                             </a>
                         </div>
                         <hr>
@@ -318,6 +326,10 @@
                         </p>
                         
                     </div>
+                    <div class="col-lg-3 col-12 pt-2">
+                        <iframe class="col-12" height="315" src="https://www.youtube.com/embed/SUPexG8CAis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -602,11 +614,10 @@
             <div class="container">
                 <div class="owl-carousel recently-view">
                     <div class="product p-2">
-                        <div class="discount-tag">
-                            -48%
-                        </div>
-                        
                         <div class="images">
+                            <div class="discount-tag">
+                                -48%
+                            </div>    
                             <a href="#">
                                 <img src="assets/images/products/2.jpg" alt="Image" class="main-image">
                             </a>
@@ -654,11 +665,10 @@
                         </div>
                     </div>
                     <div class="product p-2">
-                        <div class="discount-tag">
-                            -48%
-                        </div>
-                        
                         <div class="images">
+                            <div class="discount-tag">
+                                -48%
+                            </div>
                             <a href="#">
                                 <img src="assets/images/products/2.jpg" alt="Image" class="main-image">
                             </a>
@@ -706,11 +716,10 @@
                         </div>
                     </div>
                     <div class="product p-2">
-                        <div class="discount-tag">
-                            -48%
-                        </div>
-                        
                         <div class="images">
+                            <div class="discount-tag">
+                                -48%
+                            </div>
                             <a href="#">
                                 <img src="assets/images/products/2.jpg" alt="Image" class="main-image">
                             </a>
@@ -758,11 +767,10 @@
                         </div>
                     </div>
                     <div class="product p-2">
-                        <div class="discount-tag">
-                            -48%
-                        </div>
-                        
                         <div class="images">
+                            <div class="discount-tag">
+                                -48%
+                            </div>
                             <a href="#">
                                 <img src="assets/images/products/2.jpg" alt="Image" class="main-image">
                             </a>
@@ -809,58 +817,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="product p-2">
-                        <div class="discount-tag">
-                            -48%
-                        </div>
-                        
-                        <div class="images">
-                            <a href="#">
-                                <img src="assets/images/products/2.jpg" alt="Image" class="main-image">
-                            </a>
-                            <div class="options-pannel2">
-                                <ul>
-                                    <li class="d-lg-block d-md-block d-none" title="compare">
-                                        <a href="#" class="compare" >
-                                            <i class="fas fa-random"></i>
-                                        </a>
-                                    </li>
-                                    <li title="Quick View" class="d-lg-block d-md-block d-none">
-                                        <a href="#" class="compare" data-bs-toggle="modal" data-bs-target="#product-modal" >
-                                            <i class="fas fa-search"></i>
-                                        </a>
-                                    </li>
-                                    <li title="Add To Wishlist">
-                                        <a href="#" class="compare">
-                                            <i class="far fa-heart"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="product-details text-center pt-2 ps-2">
-
-                            <a href="#" class="text-dark" style="text-decoration: none; font-weight: 600;">Exclusive Mens Polo Shirts</a>
-                            <div class="price">
-                                <del class="text-muted">850.00৳</del><span class="ps-1" style="color: #ff7400; font-weight: bold;">750.00৳</span>
-                            </div>
-                            <p class="product-details-p" style="display: none;">
-                                Live Shopping is one of the fastest-growing trendy fashion lifestyle brands in Bangladesh. We have just started! We aimed to serve our customers with international products at a competitive price range. We deliver premium quality and 100% QC pass products. Live Shopping means Exact Shopping
-                            </p>
-                            <a href="#">
-                                <div class="button m-auto text-light">
-                                    <p><b>
-                                        BUY NOW
-                                    </b></p>
-                                    <span>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </span>
-                                
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -1224,6 +1181,13 @@
     
     <script src="assets/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      // Customization example
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        infinite: false
+      });
+    </script>
     
     <script src="assets/js/main.js"></script>
     <script>

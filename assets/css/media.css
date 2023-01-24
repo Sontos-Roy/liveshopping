@@ -4,6 +4,9 @@
     .topbar-main{
         display: none;
     }
+    .sm-none{
+      display: none;
+    }
     /* tobar section  */
     /* navbar section  */
     .navbar-inner{
@@ -20,10 +23,10 @@
     }
     
     .tab-container .product-items{
-      height: 390px;
+      height: auto;
     }
     .tab-container .product-items .product{
-      height: 390px;
+      height: auto;
     }
     .options-pannel2, .options-pannel{
       opacity: 1;
@@ -34,20 +37,31 @@
     .product:hover .options-pannel2{
       animation: none;
     }
-    .global-carousel-owl-col{
-      min-height: 470px;
-    }
-    .tab-container  .product-items{
-      height: 390px;
+    .tab-container .product-items{
+      height: auto;
     }
     .tab-container .product-items .product, .deal-day-row .product{
-      height: 390px;
+      height: auto;
+      padding: 10px;
     }
     .deal-day-row .product.wishlist-product{
       height: auto;
     }
     .shop-filter-sidebar{
-      display: none;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s;
+      background-color: white;
+      height: 100vh;
+      overflow: auto;
+    }
+    .shop-filter-sidebar.active{
+      visibility: visible;
+      opacity: 1;
+      z-index: 1070;
     }
     .product-details-p{
       display: none;
@@ -84,11 +98,12 @@
       width: 300px;
     }
     
-    .tab-container  .product-items{
-      height: 390px;
+    .tab-container .product-items{
+      height: auto;
     }
     .tab-container .product-items .product, .deal-day-row .product{
-      height: 390px;
+      height: auto;
+  
     }
     .deal-day-row .product.wishlist-product{
       height: auto;
@@ -127,10 +142,10 @@
     }
     
     .tab-container .product-items{
-      height: 390px;
+      height: auto;
     }
     .tab-container .product-items .product{
-      height: 390px;
+      height: auto;
     }
     .shop-filter-sidebar{
       display: none;
@@ -188,5 +203,9 @@
     }
     .border-lg-start{
       border-left: 1px solid rgba(128, 128, 128, 0.171);
+    }
+    .main-wrapper{
+      width: 90%;
+      margin: 0 auto;
     }
   }

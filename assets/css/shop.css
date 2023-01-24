@@ -364,3 +364,14 @@
     border-top: 1px solid #FF7400;
     border-bottom: 1px solid #FF7400;
   }
+
+  .fixed-filter-bottom{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    background: orange;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}

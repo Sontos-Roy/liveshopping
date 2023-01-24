@@ -14,10 +14,14 @@ body {
 :root{
   --main-color: #ff7400;
 }
+.modal{
+  z-index: 2050;
+}
 
 .main-wrapper {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .breadcrumb-item.active{
   color: gray !important;
@@ -117,11 +121,20 @@ body {
     /* topbar end  */
     
     /* navbar start  */
+            #navbar{
+              position: fixed;
+              top: 0;
+              display: none;
+              z-index: 1080;
+              width: 100%;
+              /* transition: all 0.5s; */
+            }
           .manubar{
             background-color: var(--main-color);
             border-bottom-width: 0px;
             border-bottom-style: solid;
             transition: background-color .2s ease;
+            
           }
           .navbar-inner{
             display: flex;
@@ -130,8 +143,8 @@ body {
             padding: 0;
           }
           .navbar-inner{
-            height: 90px;
-            max-height: 90px;
+            height: 50px;
+            max-height: 50px;
           }
           .navbar-inner li{
             list-style: none;
@@ -204,7 +217,7 @@ body {
                 width: 100%;
                 height: 100vh;
                 background: rgba(0, 0, 0, 0.432);
-                z-index: 1000;
+                z-index: 10001;
                 transition: 0.3s ease all;
               }
               .mobile-sidebar{
@@ -216,7 +229,7 @@ body {
                 height: 100vh;
                 max-height: 100vh;
                 overflow-y: auto;
-                z-index: 1090;
+                z-index: 10003;
                 transition: 0.3s linear all;
               }
               
@@ -374,6 +387,7 @@ body {
                 /* transition: 0.5s linear all; */
                 animation: hide-dp 0.5s linear;
                 box-shadow: 0px 2px 10px 0px #80808096;
+                z-index: 1090;
               }
               
               .search-cat-dp ul::-webkit-scrollbar {
@@ -712,7 +726,7 @@ body {
 .global-cat-sec .global-cat-row .global-single-col .global-single-item .global-single-sec-text{
   position: absolute;
   bottom: 1rem;
-  z-index: 9999;
+  z-index: 1075;
 }
 .global-cat-sec .global-cat-row .global-single-col .global-single-item .global-single-sec-text h2{
   font-family: hind-semi;
@@ -760,13 +774,11 @@ body {
 } */
 
 .global-carousel-owl-col{
-  min-height: 470px;
-  height: 470px;
   overflow: hidden;
 }
 
 .tab-container .product-items{
-  /* height: 360px; */
+  height: auto;
   width: 100%;
   margin-top: 20px;
   opacity: 1;
@@ -777,14 +789,16 @@ body {
 }
 .tab-container .product-items .product, .deal-day-row .product{
   /* max-height: 360px; */
+  height: auto;
   overflow: hidden;
-  padding: 10px;
   border-right: 1px solid rgba(0, 0, 0, 0.274) !important;
   position: relative;
+  padding-bottom: 10px;
+  padding: 5px;
 }
 .product-items div > .images , .deal-day-row .product .images{
   max-width: 250px;
-  min-height: 180px;
+  min-height: auto;
    max-height: 300px;
   overflow: hidden;
   position: relative;
@@ -805,6 +819,7 @@ width: 100%;
 }
 .product .images{
   max-height: 300px;
+  border-radius: 20px;
   overflow: hidden;
 }
 .product .images .main-image{
@@ -825,7 +840,7 @@ width: 100%;
 }
 .discount-tag{
   position: absolute;
-  margin-top: 20px;
+  bottom: 10px;
   margin-left: 10px;
   padding: 2px 10px;
   color: white;
@@ -833,6 +848,7 @@ width: 100%;
   font-size: 12px;
   background-color: var(--main-color);
   z-index: 999;
+  border-radius: 20px 0 20px 0;
 }
 .options-pannel{
   width: 40px;
@@ -928,9 +944,22 @@ width: 100%;
   margin-top: -46px;
   transition: 0.5s;
 }
-
 /* summery-trendy section end  */
-
+.owl-nav{
+  position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  width: 25px;
+  background-color: white;
+  color: gray;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
 /* owl-gift card  */
 .gift-card-owl div{
   overflow: hidden;
